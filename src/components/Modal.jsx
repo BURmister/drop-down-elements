@@ -17,7 +17,7 @@ export const Modal = ({ showModal, children, preventForm }) => {
 
    useEffect(() => {
       setShow(showModal);
-   }, []);
+   }, [showModal]);
 
    return (
       <>

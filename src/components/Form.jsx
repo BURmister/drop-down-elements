@@ -78,49 +78,35 @@ export const Form = ({ children }) => {
                </div>
             </div>
          </form>
-         {successSubmitted && (
-            <Modal showModal={successSubmitted} preventForm={() => preventForm()}>
-               <div className="form-component haveSubmited flex flex-col">
-                  <div className="haveSubmitted_caption flex flex-col">
-                     <h3 className="caption-32 text-white">Спасибо за Ваши вопросы!</h3>
-                     <p className="text-20 text-white">Мы свяжемся с Вами в ближайшее время, ожидайте звонка.</p>
-                  </div>
-                  <div className="json-animation-wrapper">
-                     <div className="lottie-animation-container">
-                        <Lottie animationData={AnimD} />
-                     </div>
-                  </div>
-                  <svg
-                     className="line-vector left-line"
-                     width="569"
-                     height="285"
-                     viewBox="0 0 569 285"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path
-                        d="M1.5 38.0001C20.3333 19.0001 66.3 -13.2999 99.5 9.50014C141 38.0001 100.5 104 83 99.5C65.5 95 113 30 162 51C211 72 192 244.5 162 244.5C132 244.5 197.607 138 396.5 138C492.5 138 567.5 182 567.5 283.5"
-                        stroke="#FFD747"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                     />
-                  </svg>
-                  <svg
-                     className="line-vector right-line"
-                     width="201"
-                     height="327"
-                     viewBox="0 0 201 327"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path
-                        d="M199.5 1C149.167 3.5 46.2 18.4 37 58C25.5 107.5 140.5 142.5 168.5 141C196.5 139.5 148 121 64.5002 141C-18.9998 161 -14.4998 216.5 47.0002 234C108.5 251.5 180.5 267 164.5 291C151.7 310.2 128.167 322 118 325.5"
-                        stroke="#FFD747"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                     />
-                  </svg>
+         <Modal showModal={successSubmitted} preventForm={() => preventForm()}>
+            <div className="form-component haveSubmited flex flex-col">
+               <div className="haveSubmitted_caption flex flex-col">
+                  <h3 className="caption-32 text-white">Спасибо за Ваши вопросы!</h3>
+                  <p className="text-20 text-white">Мы свяжемся с Вами в ближайшее время, ожидайте звонка.</p>
                </div>
-            </Modal>
-         )}
+               <div className="json-animation-wrapper">
+                  <div className="lottie-animation-container">
+                     <Lottie animationData={AnimD} />
+                  </div>
+               </div>
+               <svg className="line-vector left-line" width="569" height="285" viewBox="0 0 569 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M1.5 38.0001C20.3333 19.0001 66.3 -13.2999 99.5 9.50014C141 38.0001 100.5 104 83 99.5C65.5 95 113 30 162 51C211 72 192 244.5 162 244.5C132 244.5 197.607 138 396.5 138C492.5 138 567.5 182 567.5 283.5"
+                     stroke="#FFD747"
+                     strokeWidth="2"
+                     strokeLinecap="round"
+                  />
+               </svg>
+               <svg className="line-vector right-line" width="201" height="327" viewBox="0 0 201 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M199.5 1C149.167 3.5 46.2 18.4 37 58C25.5 107.5 140.5 142.5 168.5 141C196.5 139.5 148 121 64.5002 141C-18.9998 161 -14.4998 216.5 47.0002 234C108.5 251.5 180.5 267 164.5 291C151.7 310.2 128.167 322 118 325.5"
+                     stroke="#FFD747"
+                     strokeWidth="2"
+                     strokeLinecap="round"
+                  />
+               </svg>
+            </div>
+         </Modal>
       </>
    );
 };

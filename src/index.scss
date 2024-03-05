@@ -1334,14 +1334,20 @@ textarea.norm-input {
 
     opacity: 0;
     pointer-events: none;
-    transform: translateY(5%) scale(0.95);
-
     transition: all 0.4s ease-in-out;
+
+    .modal {
+      transform: translateY(5%) scale(0.95);
+      transition: all 0.4s ease-in-out;
+    }
 
     &.open {
       opacity: 1;
       pointer-events: auto;
-      transform: translateY(0%) scale(1);
+
+      .modal {
+        transform: translateY(0%) scale(1);
+      }
     }
   }
 
