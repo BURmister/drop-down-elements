@@ -18,7 +18,6 @@ export const Form = ({ children }) => {
 
       const formData = new FormData(event.target);
       const data = Object.fromEntries(formData.entries());
-      console.log(data);
 
       setTimeout(() => setSuccessSubmitted(true), 0);
    };
